@@ -1,0 +1,80 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+import { Menu, X } from 'lucide-react';
+
+interface NavigationProps {
+  activeSection: string;
+  mobileMenuOpen: boolean;
+  setMobileMenuOpen: (open: boolean) => void;
+  handleMobileMenuClick: (section: string) => void;
+}
+
+export const Navigation: React.FC<NavigationProps> = ({
+  activeSection,
+  mobileMenuOpen,
+  setMobileMenuOpen,
+  handleMobileMenuClick,
+}) => {
+  const sections = ['home', 'objective', 'education', 'experience', 'projects', 'skills', 'contact'];
+
+  return (
+    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex justify-between items-center">
+          <span className="text-2xl font-bold text-cyan-400">JD</span>
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex gap-6">
+            {sections.map((section) => (
+              <Link
+                key={section}
+                to={section}
+                smooth={true}
+                spy={true}
+                offset={-100}
+                className={`cursor-pointer transition-colors capitalize font-semibold text-lg ${
+                  activeSection === section
+                    ? 'text-cyan-400 relative after:content-[""] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-violet-400'
+                    : 'text-white hover:text-cyan-400'
+                }`}
+              >
+                {section}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden text-white hover:text-cyan-400 transition-colors"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 border-t border-cyan-900">
+            {sections.map((section) => (
+              <Link
+                key={section}
+                to={section}
+                smooth={true}
+                spy={true}
+                offset={-100}
+                className={`block px-4 py-2 capitalize font-semibold text-lg ${
+                  activeSection === section
+                    ? 'text-cyan-400 bg-cyan-950/30'
+                    : 'text-white hover:text-cyan-400'
+                }`}
+                onClick={() => handleMobileMenuClick(section)}
+              >
+                {section}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
