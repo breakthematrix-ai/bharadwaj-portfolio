@@ -1,6 +1,5 @@
 import React, { useCallback } from 'react';
 import { Download, Github, Linkedin } from 'lucide-react';
-import { ParticleSphere } from './ParticleSphere';
 import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-slim";
 import { loadSlim } from "tsparticles-slim";
@@ -19,19 +18,23 @@ export const Hero: React.FC = () => {
               John Doe
             </h1>
             <h2 className="text-xl md:text-3xl mb-6 text-cyan-400">
-              Robotics Engineer & AI Specialist
+              Robotics and Artificial Intelligence Engineer
             </h2>
             <p className="text-base md:text-lg mb-8 text-gray-200">
-              Pioneering the future of robotics with innovative solutions in automation, 
-              artificial intelligence, and mechanical design.
+              Pioneering the future of robotics with innovative solutions in robotics, 
+              artificial intelligence, neuroscience, computer vision and mechanical design.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
+
+              
               <button className="w-full sm:w-auto flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg hover:from-cyan-600 hover:to-violet-600 transition-all">
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
               </button>
+              
+              
               <a 
-                href="https://github.com" 
+                href="https://github.com/bharadwaj-chukkala" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center px-6 py-3 border border-cyan-500 rounded-lg hover:bg-cyan-500/10 transition-all"
@@ -39,8 +42,9 @@ export const Hero: React.FC = () => {
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
               </a>
+
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/bharadwaj-chukkala" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center px-6 py-3 border border-cyan-500 rounded-lg hover:bg-cyan-500/10 transition-all"
@@ -112,8 +116,8 @@ export const Hero: React.FC = () => {
               }}
             />
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" 
-              alt="John Doe"
+              src="assets/breakthematrix_dp.jpg" 
+              alt="Bharadwaj Chukkala"
               className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full object-cover border-4 border-cyan-400 relative z-20"
             />
           </div>
