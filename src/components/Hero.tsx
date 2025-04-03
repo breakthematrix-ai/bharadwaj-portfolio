@@ -116,7 +116,7 @@ export const Hero: React.FC = () => {
               }}
             />
             <img 
-              src="assets/breakthematrix_dp.jpg" 
+              src="assets/headshot.jpg" 
               alt="Bharadwaj Chukkala"
               className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full object-cover border-4 border-cyan-400 relative z-20"
             />
