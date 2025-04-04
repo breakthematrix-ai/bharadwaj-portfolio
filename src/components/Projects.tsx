@@ -10,84 +10,120 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "Autonomous Drone Navigation System",
-      description: "Developed an AI-powered navigation system for autonomous drones using computer vision and deep learning.",
-      video: "https://player.vimeo.com/video/225408543",
-      technologies: ["Python", "TensorFlow", "ROS", "OpenCV"],
+      title: "Real-Time Motion Control for Robotic Endoscope",
+      description: "Developed real-time motion control software in C++ for robotic endoscope articulation using computational state machines.",
+      video: "https://www.vecteezy.com/video/20060759-artificial-intelligence-a-i-technology-machine-learning-futuristic-innovation-3d-rendering",
+      technologies: ["C++", "EtherCAT", "State Machine"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Achieved 95% accuracy in obstacle detection",
-        "Reduced processing latency by 40%",
-        "Implemented in 3 commercial drone models"
+        "Achieved jitter-free control for surgical applications",
+        "Engineered multi-platform architecture with clean APIs"
       ]
     },
     {
-      title: "Robotic Arm for Precision Manufacturing",
-      description: "Created a 6-DOF robotic arm with advanced control systems for high-precision manufacturing tasks.",
-      video: "https://player.vimeo.com/video/152188988",
-      technologies: ["C++", "ROS", "MATLAB", "CAD"],
+      title: "Multi-Objective Motion Planning for Autonomous Vehicles",
+      description: "Designed a hybrid planner using informed RRT* and ML to optimize paths in dynamic environments.",
+      video: "https://player.vimeo.com/video/123456790",
+      technologies: ["Python", "RRT*", "Machine Learning"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Increased manufacturing precision by 30%",
-        "Reduced setup time by 50%",
-        "Implemented in 5 manufacturing plants"
+        "Improved trajectory accuracy by 20%",
+        "Reduced planning time by 40%"
       ]
     },
     {
-      title: "Smart Prosthetic Hand",
-      description: "Designed and developed a neural network-controlled prosthetic hand with tactile feedback.",
-      video: "https://player.vimeo.com/video/196492857",
-      technologies: ["Python", "TensorFlow", "Arduino", "3D Printing"],
+      title: "Autonomous Grasping Robot for Medical Waste",
+      description: "Built an end-to-end software stack with perception, navigation, and manipulation to dispose of hazardous medical waste.",
+      video: "https://player.vimeo.com/video/123456791",
+      technologies: ["Python", "ROS", "OOP"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Achieved 90% gesture recognition accuracy",
-        "Reduced response time to 50ms",
-        "Successfully tested with 10 patients"
+        "140% improvement in efficiency",
+        "85% reduction in hazardous exposure"
       ]
     },
     {
-      title: "Autonomous Drone Navigation System",
-      description: "Developed an AI-powered navigation system for autonomous drones using computer vision and deep learning.",
-      video: "https://player.vimeo.com/video/225408543",
-      technologies: ["Python", "TensorFlow", "ROS", "OpenCV"],
+      title: "SLAM for Urban Search and Rescue",
+      description: "Modeled a USR vehicle with Lidar and implemented SLAM using ROS for disaster area mapping.",
+      video: "https://player.vimeo.com/video/123456792",
+      technologies: ["C++", "ROS", "Lidar"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Achieved 95% accuracy in obstacle detection",
-        "Reduced processing latency by 40%",
-        "Implemented in 3 commercial drone models"
+        "Enabled autonomous navigation in unstructured environments"
       ]
     },
     {
-      title: "Robotic Arm for Precision Manufacturing",
-      description: "Created a 6-DOF robotic arm with advanced control systems for high-precision manufacturing tasks.",
-      video: "https://player.vimeo.com/video/152188988",
-      technologies: ["C++", "ROS", "MATLAB", "CAD"],
+      title: "Deep Learning Motion Planner",
+      description: "Trained a DNN for robot path prediction and compared performance with traditional planners.",
+      video: "https://player.vimeo.com/video/123456793",
+      technologies: ["TensorFlow", "Scikit-Learn"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Increased manufacturing precision by 30%",
-        "Reduced setup time by 50%",
-        "Implemented in 5 manufacturing plants"
+        "Achieved 96% accuracy on fresh test data"
       ]
     },
     {
-      title: "Smart Prosthetic Hand",
-      description: "Designed and developed a neural network-controlled prosthetic hand with tactile feedback.",
-      video: "https://player.vimeo.com/video/196492857",
-      technologies: ["Python", "TensorFlow", "Arduino", "3D Printing"],
+      title: "3D Reconstruction using Stereo Vision",
+      description: "Stitched panoramas and estimated depth using stereo vision and epipolar geometry.",
+      video: "https://player.vimeo.com/video/123456794",
+      technologies: ["OpenCV", "Python"],
       github: "https://github.com",
       demo: "https://demo.com",
       outcomes: [
-        "Achieved 90% gesture recognition accuracy",
-        "Reduced response time to 50ms",
-        "Successfully tested with 10 patients"
+        "Accurate disparity map and depth estimation"
+      ]
+    },
+    {
+      title: "Human Detection and Tracking",
+      description: "Developed perception software to detect and track humans using SVMs in OpenCV.",
+      video: "https://player.vimeo.com/video/123456795",
+      technologies: ["C++", "OpenCV", "SVM"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      outcomes: [
+        "92% accuracy in real-time tracking"
+      ]
+    },
+    {
+      title: "Lane Detection & Turn Prediction",
+      description: "Built computer vision algorithms for autonomous driving lane tracking and turn prediction.",
+      video: "https://player.vimeo.com/video/123456796",
+      technologies: ["OpenCV", "Python"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      outcomes: [
+        "87% turn prediction accuracy"
+      ]
+    },
+    {
+      title: "Automated Material Handling with UR10",
+      description: "Created a robotic system for material handling with over 100 ROS topics in Gazebo.",
+      video: "https://player.vimeo.com/video/123456797",
+      technologies: ["C++", "ROS", "Gazebo"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      outcomes: [
+        "Boosted production efficiency significantly"
+      ]
+    },
+    {
+      title: "LQG & LQR Control of Gantry Crane",
+      description: "Designed optimal controllers for a crane system with Kalman filters for noise compensation.",
+      video: "https://player.vimeo.com/video/123456798",
+      technologies: ["MATLAB", "Control Theory"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      outcomes: [
+        "Minimized oscillations and control effort"
       ]
     }
   ];
+  
 
   return (
     <section id="projects" className="py-20 relative z-10">

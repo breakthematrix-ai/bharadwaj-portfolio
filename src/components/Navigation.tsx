@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Terminal, Rocket } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: string;
@@ -21,7 +21,10 @@ export const Navigation: React.FC<NavigationProps> = ({
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <span className="text-2xl font-bold text-cyan-400">JD</span>
+          <Rocket className="w-8 h-8 text-cyan-400" />
+          <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
+              Portfolio
+          </span>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6">

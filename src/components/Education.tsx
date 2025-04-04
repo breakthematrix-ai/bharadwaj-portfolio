@@ -10,31 +10,31 @@ const Education: React.FC = () => {
 
   const education = [
     {
-      degree: "Ph.D. in Robotics Engineering",
-      institution: "Massachusetts Institute of Technology",
-      period: "2018 - 2022",
-      description: "Specialized in Human-Robot Interaction and Machine Learning",
+      degree: "M.S. in Engineering",
+      institution: "University of Maryland at College Park",
+      period: "2021 - 2023",
+      description: "Focus on Robotics and Artificial Intelligence",
       achievements: [
-        "Thesis: 'Advanced Control Systems for Collaborative Robots'",
-        "Published 5 papers in top-tier robotics journals",
-        "Received Outstanding Research Award"
-      ]
-    },
-    {
-      degree: "M.S. in Mechanical Engineering",
-      institution: "Stanford University",
-      period: "2016 - 2018",
-      description: "Focus on Control Systems and Automation",
-      achievements: [
-        "GPA: 3.95/4.0",
+        "GPA: 3.83/4.0",
         "Research Assistant in Autonomous Systems Lab",
         "Merit Scholarship Recipient"
       ]
     },
     {
-      degree: "B.S. in Computer Science",
-      institution: "University of California, Berkeley",
-      period: "2012 - 2016",
+      degree: "Graduate Studies",
+      institution: "Wesleyan University",
+      period: "2017 - 2019",
+      description: "Focus on Abnormal and Behavioural Psychology",
+      achievements: [
+        "GPA: 3.83/4.0",
+        "Research Assistant in Autonomous Systems Lab",
+        "Merit Scholarship Recipient"
+      ]
+    },
+    {
+      degree: "B.Tech in Mechanical Engineering",
+      institution: "BML Munjal University, Gurgaon",
+      period: "2016 - 2020",
       description: "Minor in Robotics",
       achievements: [
         "Summa Cum Laude",

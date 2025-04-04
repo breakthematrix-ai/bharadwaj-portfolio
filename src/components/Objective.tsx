@@ -21,7 +21,7 @@ export const Objective: React.FC = () => {
             <Target className="w-12 h-12 text-cyan-400 mb-4" />
             <h3 className="text-xl font-bold mb-4 text-white">Vision</h3>
             <p className="text-gray-200">
-              To become the world's leading expert in robotics and AI, pushing the boundaries
+              To become one of the world's leading expert in Engineering, pushing the boundaries
               of what's possible in human-robot interaction and autonomous systems.
             </p>
           </div>
@@ -37,7 +37,7 @@ export const Objective: React.FC = () => {
             <Trophy className="w-12 h-12 text-cyan-400 mb-4" />
             <h3 className="text-xl font-bold mb-4 text-white">Goals</h3>
             <p className="text-gray-200">
-              To revolutionize the field of robotics through groundbreaking research,
+              To revolutionize the field i work in through groundbreaking research,
               innovative solutions, and inspiring the next generation of engineers.
             </p>
           </div>

@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Email</h3>
-                <p className="text-gray-200">john.doe@example.com</p>
+                <p className="text-gray-200">bchukkal@terpmail.umd.edu</p>
               </div>
             </div>
             
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Phone</h3>
-                <p className="text-gray-200">+1 (555) 123-4567</p>
+                <p className="text-gray-200">+1 (503) 268-3042</p>
               </div>
             </div>
             
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Location</h3>
-                <p className="text-gray-200">Boston, Massachusetts</p>
+                <p className="text-gray-200">Dallas, Texas</p>
               </div>
             </div>
             
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-bold text-white">Schedule a Meeting</h3>
                 <a 
-                  href="https://calendly.com"
+                  href="https://calendly.com/bharadwaj-chukkala"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-400 hover:text-cyan-300 transition-colors"

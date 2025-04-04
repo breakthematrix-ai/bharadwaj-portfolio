@@ -10,39 +10,32 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: "Senior Robotics Engineer",
-      company: "Boston Dynamics",
-      location: "Waltham, MA",
-      period: "2022 - Present",
+      title: "Founding Engineer - Robotics and AI",
+      company: "Surgical Automations Inc.",
+      location: "Dallas, TX",
+      period: "Aug 2023 - Present",
       responsibilities: [
-        "Lead a team of 5 engineers in developing next-generation quadruped robots",
-        "Implemented advanced AI algorithms improving robot navigation by 40%",
-        "Designed and deployed custom ROS packages for robot control systems",
-        "Collaborated with research teams to integrate computer vision capabilities"
+        "Designed full-stack robotics software for surgical devices using Python and  C++",
+        "Created Frontends using PyQt, and Tkinter with real-time UI overlays and surgeon-facing controls.",
+        "Ported software from Python to C++ for enhanced performance, using OOP, multithreading, and multiprocessing.",
+        "Built and deployed deep learning pipelines with Faster R-CNN, YOLO, UNet, and DepthAnything for anomaly detection and autonomous navigation.",
+        "Developed custom computer vision algorithms for surgical scene understanding and visual servoing.",
+        "Integrated multi-modal navigation with Kalman filtering using shape sensors, vision depth, and ToF-based collision avoidance.",
+        "Engineered embedded communication using USB sensors and ESP32 for motors, cameras, and ToF sensors.",
+        "Invented a flexible shape sensor and contributed to patents on the distal tip design for better navigation accuracy.",
+        "Curated the world’s largest annotated lower GI tract navigation dataset and authored FDA-aligned technical docs."
       ]
     },
     {
-      title: "Robotics Research Scientist",
-      company: "NASA Jet Propulsion Laboratory",
-      location: "Pasadena, CA",
-      period: "2020 - 2022",
+      title: "Co-Founder and Robotics Engineer",
+      company: "Solbots Technologies",
+      location: "Hyderabad, India",
+      period: "Jan 2020 - June 2021",
       responsibilities: [
-        "Developed autonomous navigation systems for Mars rovers",
-        "Reduced path planning computation time by 60% through optimization",
-        "Published 3 papers on robust control systems for space robotics",
-        "Mentored 4 junior engineers in robotics software development"
-      ]
-    },
-    {
-      title: "Robotics Software Engineer",
-      company: "Intuitive Surgical",
-      location: "Sunnyvale, CA",
-      period: "2018 - 2020",
-      responsibilities: [
-        "Developed control algorithms for surgical robots",
-        "Improved system response time by 25% through code optimization",
-        "Implemented safety protocols for human-robot interaction",
-        "Created simulation environments for testing robot behaviors"
+        "Led development of a robotic arm prosthetic using Python and C++, reducing production time by 30%.",
+        "Built and deployed a food serving robot system, improving customer satisfaction by 25%.",
+        "Conducted research with amputees to improve prosthetic usability and comfort.",
+        "Managed business outreach during the pandemic, securing deployments of food serving robots for safety applications."
       ]
     }
   ];

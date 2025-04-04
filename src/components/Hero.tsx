@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white">
-              John Doe
+              Bharadwaj Chukkala
             </h1>
             <h2 className="text-xl md:text-3xl mb-6 text-cyan-400">
               Robotics and Artificial Intelligence Engineer
