@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Terminal, Rocket } from 'lucide-react';
+import { Menu, X, Rocket } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: string;
