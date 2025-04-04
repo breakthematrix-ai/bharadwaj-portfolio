@@ -12,8 +12,8 @@ export const Objective: React.FC = () => {
               <Cpu size={32} className="text-cyan-400" />
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-400">
-            My Objective
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r py-2 from-cyan-400 to-violet-400">
+            Objective
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
