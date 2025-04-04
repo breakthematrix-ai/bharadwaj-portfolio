@@ -21,10 +21,12 @@ export const Navigation: React.FC<NavigationProps> = ({
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Rocket className="w-8 h-8 text-cyan-400" />
-          <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
+          <div className="flex items-center gap-2">
+            <Rocket className="w-8 h-8 text-cyan-400" />
+            <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
               Portfolio
-          </span>
+            </span>
+          </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6">
