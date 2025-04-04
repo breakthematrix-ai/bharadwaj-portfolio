@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, Github, ExternalLink } from 'lucide-react';
+import { Terminal, Github, ExternalLink } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const Projects: React.FC = () => {
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-violet-400 py-2 rounded-lg blur opacity-75"></div>
             <div className="relative bg-black rounded-lg p-4">
-              <Rocket size={32} className="text-cyan-400" />
+              <Terminal size={32} className="text-cyan-400" />
             </div>
           </div>
           <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-400">
