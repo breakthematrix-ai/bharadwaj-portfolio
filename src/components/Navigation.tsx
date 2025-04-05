@@ -24,7 +24,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           <div className="flex items-center gap-2">
             <Rocket className="w-8 h-8 text-cyan-400" />
             <span className="text-3xl bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
-              Portfolio
+              BC
             </span>
           </div>
           
