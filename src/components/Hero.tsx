@@ -27,10 +27,16 @@ export const Hero: React.FC = () => {
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
 
               
-              <button className="w-full sm:w-auto flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg hover:from-cyan-600 hover:to-violet-600 transition-all">
+              <a
+                href="assets/resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg hover:from-cyan-600 hover:to-violet-600 transition-all"
+              >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
-              </button>
+              </a>
               
               
               <a 
