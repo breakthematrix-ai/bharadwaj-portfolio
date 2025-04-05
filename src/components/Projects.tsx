@@ -12,10 +12,12 @@ const Projects: React.FC = () => {
     {
       title: "Real-Time Motion Control for Robotic Endoscope",
       description: "Developed real-time motion control software in C++ for robotic endoscope articulation using computational state machines.",
-      video: "https://www.vecteezy.com/video/20060759-artificial-intelligence-a-i-technology-machine-learning-futuristic-innovation-3d-rendering",
+      video: null,
+      image: "/images/endoscope-control.jpg",
       technologies: ["C++", "EtherCAT", "State Machine"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Achieved jitter-free control for surgical applications",
         "Engineered multi-platform architecture with clean APIs"
@@ -25,9 +27,11 @@ const Projects: React.FC = () => {
       title: "Multi-Objective Motion Planning for Autonomous Vehicles",
       description: "Designed a hybrid planner using informed RRT* and ML to optimize paths in dynamic environments.",
       video: "https://player.vimeo.com/video/123456790",
+      image: null,
       technologies: ["Python", "RRT*", "Machine Learning"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Improved trajectory accuracy by 20%",
         "Reduced planning time by 40%"
@@ -36,10 +40,12 @@ const Projects: React.FC = () => {
     {
       title: "Autonomous Grasping Robot for Medical Waste",
       description: "Built an end-to-end software stack with perception, navigation, and manipulation to dispose of hazardous medical waste.",
-      video: "https://player.vimeo.com/video/123456791",
+      video: "https://www.youtube.com/embed/U7UHgr7ei_M",
+      image: null,
       technologies: ["Python", "ROS", "OOP"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: "https://github.com/bharadwaj-chukkala/MARIO-COM",
+      demo: "https://github.com/bharadwaj-chukkala/MARIO-COM/blob/master/README.md",
+      confidential: false,
       outcomes: [
         "140% improvement in efficiency",
         "85% reduction in hazardous exposure"
@@ -49,9 +55,11 @@ const Projects: React.FC = () => {
       title: "SLAM for Urban Search and Rescue",
       description: "Modeled a USR vehicle with Lidar and implemented SLAM using ROS for disaster area mapping.",
       video: "https://player.vimeo.com/video/123456792",
+      image: null,
       technologies: ["C++", "ROS", "Lidar"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Enabled autonomous navigation in unstructured environments"
       ]
@@ -59,10 +67,12 @@ const Projects: React.FC = () => {
     {
       title: "Deep Learning Motion Planner",
       description: "Trained a DNN for robot path prediction and compared performance with traditional planners.",
-      video: "https://player.vimeo.com/video/123456793",
+      video: null,
+      image: "/images/dnn-motion.jpg",
       technologies: ["TensorFlow", "Scikit-Learn"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Achieved 96% accuracy on fresh test data"
       ]
@@ -71,9 +81,11 @@ const Projects: React.FC = () => {
       title: "3D Reconstruction using Stereo Vision",
       description: "Stitched panoramas and estimated depth using stereo vision and epipolar geometry.",
       video: "https://player.vimeo.com/video/123456794",
+      image: null,
       technologies: ["OpenCV", "Python"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Accurate disparity map and depth estimation"
       ]
@@ -82,9 +94,11 @@ const Projects: React.FC = () => {
       title: "Human Detection and Tracking",
       description: "Developed perception software to detect and track humans using SVMs in OpenCV.",
       video: "https://player.vimeo.com/video/123456795",
+      image: null,
       technologies: ["C++", "OpenCV", "SVM"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "92% accuracy in real-time tracking"
       ]
@@ -92,10 +106,12 @@ const Projects: React.FC = () => {
     {
       title: "Lane Detection & Turn Prediction",
       description: "Built computer vision algorithms for autonomous driving lane tracking and turn prediction.",
-      video: "https://player.vimeo.com/video/123456796",
+      video: "https://www.youtube.com/embed/z0aSWJq3qpI",
+      image: null,
       technologies: ["OpenCV", "Python"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "87% turn prediction accuracy"
       ]
@@ -103,10 +119,12 @@ const Projects: React.FC = () => {
     {
       title: "Automated Material Handling with UR10",
       description: "Created a robotic system for material handling with over 100 ROS topics in Gazebo.",
-      video: "https://player.vimeo.com/video/123456797",
+      video: null,
+      image: "/images/ur10-automation.jpg",
       technologies: ["C++", "ROS", "Gazebo"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Boosted production efficiency significantly"
       ]
@@ -115,9 +133,11 @@ const Projects: React.FC = () => {
       title: "LQG & LQR Control of Gantry Crane",
       description: "Designed optimal controllers for a crane system with Kalman filters for noise compensation.",
       video: "https://player.vimeo.com/video/123456798",
+      image: null,
       technologies: ["MATLAB", "Control Theory"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: null,
+      demo: null,
+      confidential: true,
       outcomes: [
         "Minimized oscillations and control effort"
       ]
@@ -139,7 +159,7 @@ const Projects: React.FC = () => {
             Projects
           </h2>
         </div>
-        
+
         <div 
           ref={ref}
           className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ${
@@ -152,17 +172,31 @@ const Projects: React.FC = () => {
               className="bg-black/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-cyan-900 hover:border-cyan-400 transition-all"
             >
               <div className="relative pt-[56.25%]">
-                <iframe
-                  src={project.video}
-                  className="absolute top-0 left-0 w-full h-full"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                {project.video ? (
+                  <iframe
+                    src={project.video}
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 text-white text-sm">
+                    No media available
+                  </div>
+                )}
               </div>
+
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
                 <p className="text-gray-200 mb-4">{project.description}</p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
                     <span 
@@ -173,30 +207,41 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
+
                 <div className="space-y-2 mb-4">
                   {project.outcomes.map((outcome, i) => (
                     <p key={i} className="text-gray-200 text-sm hover:text-cyan-400 transition-colors">• {outcome}</p>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
-                  >
-                    <Github size={20} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors"
-                  >
-                    <ExternalLink size={20} />
-                    <span>Demo</span>
-                  </a>
+
+                <div className="flex gap-4 flex-wrap items-center">
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      <Github size={20} />
+                      <span>Code</span>
+                    </a>
+                  ) : project.confidential ? (
+                    <span className="text-sm text-gray-400 italic">Code confidential</span>
+                  ) : null}
+
+                  {project.demo ? (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                      <span>Demo</span>
+                    </a>
+                  ) : project.confidential ? (
+                    <span className="text-sm text-gray-400 italic">Demo confidential</span>
+                  ) : null}
                 </div>
               </div>
             </div>

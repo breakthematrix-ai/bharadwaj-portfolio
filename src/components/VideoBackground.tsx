@@ -6,7 +6,7 @@ import { FloatingIcon } from './FloatingIcon';
 
 export const VideoBackground: React.FC = () => {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden opacity-50">
+    <div className="fixed inset-0 z-0 overflow-hidden opacity-70">
       {/* Space Background */}
       <div 
         className="absolute inset-0 bg-black"

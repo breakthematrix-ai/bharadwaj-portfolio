@@ -15,8 +15,7 @@ const Experience: React.FC = () => {
       location: "Dallas, TX",
       period: "Aug 2023 - Present",
       responsibilities: [
-        "Designed full-stack robotics software for surgical devices using Python and  C++",
-        "Created Frontends using PyQt, and Tkinter with real-time UI overlays and surgeon-facing controls.",
+        "Designed full-stack robotics software for surgical devices using Python, PyQt, and Tkinter with real-time UI overlays and surgeon-facing controls.",
         "Ported software from Python to C++ for enhanced performance, using OOP, multithreading, and multiprocessing.",
         "Built and deployed deep learning pipelines with Faster R-CNN, YOLO, UNet, and DepthAnything for anomaly detection and autonomous navigation.",
         "Developed custom computer vision algorithms for surgical scene understanding and visual servoing.",
@@ -27,19 +26,50 @@ const Experience: React.FC = () => {
       ]
     },
     {
+      title: "Graduate Teaching Assistant",
+      company: "University of Maryland",
+      location: "College Park, MD",
+      period: "Aug 2021 – May 2023",
+      responsibilities: [
+        {
+          main: "Assisted in Teaching courses:",
+          sub: [
+                "1. Assistive Robotics",
+                "2. Vibrations in Engineering",
+                "3. Robotic Control and Optimization",
+                "4. Integrated Product and Process Development"
+          ]
+        },
+        "Created and graded weekly assignments, held office hours, and mentored students to bridge academic gaps.",
+        "Encouraged and motivated over 80+ yound minds to excel in coursework and hands-on robotics."
+      ]
+    },
+    {
       title: "Co-Founder and Robotics Engineer",
       company: "Solbots Technologies",
       location: "Hyderabad, India",
       period: "Jan 2020 - June 2021",
       responsibilities: [
         "Led development of a robotic arm prosthetic using Python and C++, reducing production time by 30%.",
-        "Built and deployed a food serving robot system, improving customer satisfaction by 25%.",
+        "Developed ROS simulations and manufactured a tactile control-based bionic arm for amputees.",
         "Conducted research with amputees to improve prosthetic usability and comfort.",
+        "Built and deployed a food serving robot system, improving customer satisfaction by 25%.",
         "Managed business outreach during the pandemic, securing deployments of food serving robots for safety applications."
+      ]
+    },
+    {
+      title: "Product Design and Production Engineer",
+      company: "Pennar Aerospace",
+      location: "Hyderabad, India",
+      period: "May 2019 – July 2019",
+      responsibilities: [
+        "Designed and developed aircraft parts using SolidWorks and AutoCAD.",
+        "Handled production using CNC machines and 3D printers.",
+        "Supervised quality control and maintenance of manufacturing equipment."
       ]
     }
   ];
-
+  
   return (
     <section id="experience" className="py-20 relative z-10 ">
       <div className="container mx-auto px-4">
@@ -62,10 +92,7 @@ const Experience: React.FC = () => {
           }`}
         >
           {experiences.map((exp, index) => (
-            <div 
-              key={index}
-              className="bg-black/50 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-violet-900 hover:border-violet-400 transition-all"
-            >
+            <div key={index} className="bg-black/50 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-violet-900 hover:border-violet-400 transition-all">
               <div className="flex flex-wrap justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
@@ -76,11 +103,22 @@ const Experience: React.FC = () => {
                   <p className="text-gray-200">{exp.period}</p>
                 </div>
               </div>
-              <ul className="list-disc list-inside text-gray-200 space-y-2">
+              `<ul className="list-disc list-inside text-gray-200 space-y-2">
                 {exp.responsibilities.map((resp, i) => (
-                  <li key={i} className="hover:text-violet-400 transition-colors">{resp}</li>
+                  typeof resp === 'string' ? (
+                    <li key={i} className="hover:text-violet-400 transition-colors">{resp}</li>
+                  ) : (
+                    <li key={i} className="hover:text-violet-400 transition-colors">
+                      {resp.main}
+                      <ul className="list-circle list-inside ml-5">
+                        {resp.sub.map((subItem, j) => (
+                          <li key={j} className="hover:text-violet-400 transition-colors">{subItem}</li>
+                        ))}
+                      </ul>
+                    </li>
+                  )
                 ))}
-              </ul>
+              </ul>`
             </div>
           ))}
         </div>
