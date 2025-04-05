@@ -15,7 +15,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   setMobileMenuOpen,
   handleMobileMenuClick,
 }) => {
-  const sections = ['home', 'objective', 'education', 'experience', 'projects', 'skills', 'contact'];
+  const sections = ['home', 'education', 'experience', 'projects', 'skills', 'contact'];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
@@ -23,7 +23,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Rocket className="w-8 h-8 text-cyan-400" />
-            <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
+            <span className="text-3xl bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 text-transparent bg-clip-text">
               Portfolio
             </span>
           </div>
@@ -37,7 +37,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 smooth={true}
                 spy={true}
                 offset={-100}
-                className={`cursor-pointer transition-colors capitalize font-semibold text-lg ${
+                className={`cursor-pointer transition-colors capitalize text-lg ${
                   activeSection === section
                     ? 'text-cyan-400 relative after:content-[""] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-violet-400'
                     : 'text-white hover:text-cyan-400'

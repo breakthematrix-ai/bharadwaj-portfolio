@@ -26,9 +26,8 @@ const Education: React.FC = () => {
       period: "2017 - 2019",
       description: "Focus on Abnormal and Behavioural Psychology",
       achievements: [
-        "GPA: 3.83/4.0",
-        "Research Assistant in Autonomous Systems Lab",
-        "Merit Scholarship Recipient"
+        "Magna Cum Laude",
+        "Early Exploration of AI in Psychology"
       ]
     },
     {
@@ -37,7 +36,7 @@ const Education: React.FC = () => {
       period: "2016 - 2020",
       description: "Minor in Robotics",
       achievements: [
-        "Summa Cum Laude",
+        "Magna Cum Laude",
         "Dean's List all semesters",
         "Robotics Club President"
       ]

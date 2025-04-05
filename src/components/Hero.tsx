@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4 pt-20 relative z-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white">
+            <h1 className="text-4xl md:text-7xl font mb-6 text-white">
               Bharadwaj Chukkala
             </h1>
             <h2 className="text-xl md:text-3xl mb-6 text-cyan-400">

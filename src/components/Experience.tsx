@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
                   <p className="text-gray-200">{exp.period}</p>
                 </div>
               </div>
-              `<ul className="list-disc list-inside text-gray-200 space-y-2">
+              <ul className="list-disc list-inside text-gray-200 space-y-2">
                 {exp.responsibilities.map((resp, i) => (
                   typeof resp === 'string' ? (
                     <li key={i} className="hover:text-violet-400 transition-colors">{resp}</li>
@@ -118,7 +118,7 @@ const Experience: React.FC = () => {
                     </li>
                   )
                 ))}
-              </ul>`
+              </ul>
             </div>
           ))}
         </div>

@@ -129,10 +129,10 @@ export const VideoBackground: React.FC = () => {
       <CircuitLine className="top-1/3 right-0 w-1/4" />
       
       {/* Floating Tech Icons */}
-      <FloatingIcon icon={<CircuitBoard size={32} />} delay={0} x={100} y={100} />
+      {/* <FloatingIcon icon={<CircuitBoard size={32} />} delay={0} x={100} y={100} />
       <FloatingIcon icon={<Brain size={32} />} delay={1} x={window.innerWidth - 150} y={150} />
       <FloatingIcon icon={<Robot size={32} />} delay={2} x={200} y={window.innerHeight - 150} />
-      <FloatingIcon icon={<Waves size={32} />} delay={3} x={window.innerWidth - 200} y={window.innerHeight - 200} />
+      <FloatingIcon icon={<Waves size={32} />} delay={3} x={window.innerWidth - 200} y={window.innerHeight - 200} /> */}
     </div>
   );
 };
