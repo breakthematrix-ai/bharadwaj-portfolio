@@ -10,12 +10,12 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: "Founding Engineer - Robotics and AI",
+      title: "Founding Engineer - Robotics Software and AI",
       company: "Surgical Automations Inc.",
       location: "Dallas, TX",
       period: "Aug 2023 - Present",
       responsibilities: [
-        "Designed full-stack robotics software for surgical devices using Python, PyQt, and Tkinter with real-time UI overlays and surgeon-facing controls.",
+        "Designed full-stack robotics software for surgical devices using Python for backend, ReactJS for frontend and ROS for simulation with real-time UI overlays and surgeon-facing controls.",
         "Ported software from Python to C++ for enhanced performance, using OOP, multithreading, and multiprocessing.",
         "Built and deployed deep learning pipelines with Faster R-CNN, YOLO, UNet, and DepthAnything for anomaly detection and autonomous navigation.",
         "Developed custom computer vision algorithms for surgical scene understanding and visual servoing.",
