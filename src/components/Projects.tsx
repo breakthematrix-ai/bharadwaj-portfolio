@@ -116,8 +116,8 @@ const Projects: React.FC = () => {
       video: "https://www.youtube.com/embed/z0aSWJq3qpI",
       image: null,
       technologies: ["OpenCV", "Python", "Numpy"],
-      github: null,
-      demo: null,
+      github: "https://github.com/bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm",
+      demo: "https://github.com/bharadwaj-chukkala/Road-Lanes-detection-and-Turn-Prediction-using-Sliding-Window-Algorithm",
       confidential: false,
       outcomes: [
         "Canny Edge Detection for detecting road lines and type",
