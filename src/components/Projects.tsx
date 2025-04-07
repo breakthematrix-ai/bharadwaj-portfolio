@@ -24,14 +24,14 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      title: "Multi-Objective Motion Planning for Autonomous Vehicles",
+      title: "Multi-Algorithm Motion Planning for Autonomous Vehicles",
       description: "Designed a hybrid planner using informed RRT* and ML to optimize paths in dynamic environments.",
       video: null,
       image: "assets/rrt_ros.gif",
       technologies: ["Python", "RRT*", "Machine Learning"],
-      github: null,
-      demo: null,
-      confidential: true,
+      github: "https://github.com/bharadwaj-chukkala/Path-Planning-for-a-Turtlebot-using-RRT-Astar-hybrid-Algorithm",
+      demo: "https://github.com/bharadwaj-chukkala/Path-Planning-for-a-Turtlebot-using-RRT-Astar-hybrid-Algorithm",
+      confidential: false,
       outcomes: [
         "Improved trajectory accuracy by 20%",
         "Reduced planning time by 40%"
@@ -61,6 +61,7 @@ const Projects: React.FC = () => {
       demo: null,
       confidential: true,
       outcomes: [
+        "Multi-agent mobile robots that secure a hostage in an dynamic environment",
         "Enabled autonomous navigation in unstructured environments"
       ]
     },
@@ -70,10 +71,12 @@ const Projects: React.FC = () => {
       video: null,
       image: "assets/data_driven.png",
       technologies: ["TensorFlow", "Scikit-Learn"],
-      github: null,
-      demo: null,
-      confidential: true,
+      github: "https://github.com/bharadwaj-chukkala/Data-driven-motion-planning-using-various-machine-learning-algorithms",
+      demo: "https://github.com/bharadwaj-chukkala/Data-driven-motion-planning-using-various-machine-learning-algorithms",
+      confidential: false,
       outcomes: [
+        "Collected Environment Data using LIDAR sensor",
+        "Trained a model to find the fastest path in the known environment",
         "Achieved 96% accuracy on fresh test data"
       ]
     },
@@ -83,10 +86,12 @@ const Projects: React.FC = () => {
       video: null,
       image: "assets/Multi_stereo_vision.jpg",
       technologies: ["OpenCV", "Python"],
-      github: null,
-      demo: null,
-      confidential: true,
+      github: "https://github.com/bharadwaj-chukkala/Stereo-Vision-to-estimate-depth-in-an-image",
+      demo: "https://github.com/bharadwaj-chukkala/Stereo-Vision-to-estimate-depth-in-an-image",
+      confidential: false,
       outcomes: [
+        "Utilized Epipolar Geometry to find similiarity in images",
+        "Reconstruction of an environment using a series of images",
         "Accurate disparity map and depth estimation"
       ]
     },
@@ -95,11 +100,13 @@ const Projects: React.FC = () => {
       description: "Developed perception software to detect and track humans using SVMs in OpenCV.",
       video: null,
       image: "assets/human_detector.jpg",
-      technologies: ["C++", "OpenCV", "SVM"],
-      github: null,
-      demo: null,
-      confidential: true,
+      technologies: ["C++", "OpenCV", "SVM", "Yolov5"],
+      github: "https://github.com/bharadwaj-chukkala/Human-Detector-and-Tracker/",
+      demo: "https://github.com/bharadwaj-chukkala/Human-Detector-and-Tracker/",
+      confidential: false,
       outcomes: [
+        "Trained Yolo model to detect Humans in low exposure images",
+        "Implemented a SVM to track the detected humans in live feed",
         "92% accuracy in real-time tracking"
       ]
     },
@@ -108,12 +115,14 @@ const Projects: React.FC = () => {
       description: "Built computer vision algorithms for autonomous driving lane tracking and turn prediction.",
       video: "https://www.youtube.com/embed/z0aSWJq3qpI",
       image: null,
-      technologies: ["OpenCV", "Python"],
+      technologies: ["OpenCV", "Python", "Numpy"],
       github: null,
       demo: null,
-      confidential: true,
+      confidential: false,
       outcomes: [
-        "87% turn prediction accuracy"
+        "Canny Edge Detection for detecting road lines and type",
+        "Used Sliding window algorithm to predict the amount of turn and the direction",
+        "97% turn prediction accuracy"
       ]
     },
     {
@@ -122,11 +131,13 @@ const Projects: React.FC = () => {
       video: null,
       image: "assets/ur10.gif",
       technologies: ["C++", "ROS", "Gazebo"],
-      github: null,
-      demo: null,
-      confidential: true,
+      github: "https://github.com/bharadwaj-chukkala/ARIAC-Software-Development",
+      demo: "https://github.com/bharadwaj-chukkala/ARIAC-Software-Development",
+      confidential: false,
       outcomes: [
-        "Boosted production efficiency significantly"
+        "Designed a system that calculates inverse kinematics of the robots",
+        "Utlized Object detection to identify distinct objects to categorize in bins",
+        "Boosted production efficiency significantly using automation",
       ]
     },
     {
@@ -135,13 +146,44 @@ const Projects: React.FC = () => {
       video: null,
       image: "assets/gantry_control.gif",
       technologies: ["MATLAB", "Control Theory"],
+      github: "https://github.com/bharadwaj-chukkala/Control-system-for-two-pendulum-crane",
+      demo: "https://github.com/bharadwaj-chukkala/Control-system-for-two-pendulum-crane",
+      confidential: false,
+      outcomes: [
+        "Implemented a Luenberger Observer",
+        "Minimized oscillations and control effort"
+      ]
+    },
+    {
+      title: "Exploratory Study: Linking Neural Activity Patterns to Behavioral Disorders",
+      description: "Investigating how EEG and fMRI neural activity patterns may serve as potential predictors for behavioral disorders such as ADHD, OCD, depression, and schizophrenia, grounded in abnormal psychology research",
+      video: null,
+      image: "assets/neural_activity.png",
+      technologies: ["Python", "Data Science", "fMRI", "EEG"],
       github: null,
       demo: null,
       confidential: true,
       outcomes: [
-        "Minimized oscillations and control effort"
+        "Training a Deep Learning model on Open Source Neuroimaging Data",
+        "Bridging Psychology Theories with Neural Activity Data Interpretation"
+      ]
+    },
+    {
+      title: "Detection of Malignant Skin Cancer using Deep Learning",
+      description: "A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.",
+      video: null,
+      image: "assets/cancer_cell.png",
+      technologies: ["CNN", "Python", "Hyperparamter Tuning"],
+      github: "https://github.com/bharadwaj-chukkala/Detection_of_Malignant_Skin_Cancer_using_a_CNN",
+      demo: "https://github.com/bharadwaj-chukkala/Detection_of_Malignant_Skin_Cancer_using_a_CNN",
+      confidential: false,
+      outcomes: [
+        "Built a Neural Network Architecture from Scratch",
+        "Detects 9 different types of Malignant Cancers",
+        "Achieved a model accuracy of 91%"
       ]
     }
+   
   ];
   
 
